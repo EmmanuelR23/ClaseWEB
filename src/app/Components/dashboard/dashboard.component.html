@@ -1,0 +1,12 @@
+<div>
+    <div class="row">
+        <div *ngFor="let heroe of heroes | slice: 0:4; let i = index" class="list-group list-group-flush col-2">
+            <div class="card" style="max-width: 18rem; ">
+                <div class="card-body">
+                    <h5 class="card-title">id: {{ heroe.id }}</h5>
+                    <p class="card-text">Nombre: {{ heroe.name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
